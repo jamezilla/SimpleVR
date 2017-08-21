@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3FA92B1F49FB500092ECB1 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FA92A1F49FB500092ECB1 /* VideoTableViewController.swift */; };
+		1AAE0C951F4682A1003D74CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0C941F4682A1003D74CC /* AppDelegate.swift */; };
+		1AAE0C971F4682A1003D74CC /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0C961F4682A1003D74CC /* VRViewController.swift */; };
+		1AAE0C9C1F4682A1003D74CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */; };
+		1AAE0C9F1F4682A1003D74CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0C9D1F4682A1003D74CC /* LaunchScreen.storyboard */; };
+		1AB325471F4A00EB00102673 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 1AB325461F4A00EB00102673 /* Videos */; };
+		930B196C3B3E563AD556F50E /* libPods-SimpleVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE7BDD0B500F3F24BC6DAC /* libPods-SimpleVR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A3FA92A1F49FB500092ECB1 /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		1AAE0C911F4682A1003D74CC /* SimpleVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAE0C941F4682A1003D74CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AAE0C961F4682A1003D74CC /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
+		1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAE0C9E1F4682A1003D74CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AAE0CA01F4682A1003D74CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB325461F4A00EB00102673 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
+		1AB3254A1F4A0A5100102673 /* SimpleVR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleVR-Bridging-Header.h"; sourceTree = "<group>"; };
+		21BE7BDD0B500F3F24BC6DAC /* libPods-SimpleVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B72F1FB3F6AA1321F04D3CF /* Pods-SimpleVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVR.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR.release.xcconfig"; sourceTree = "<group>"; };
+		626399A86BB95C2DA00376B9 /* Pods-SimpleVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAE0C8E1F4682A1003D74CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930B196C3B3E563AD556F50E /* libPods-SimpleVR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAE0C881F4682A1003D74CC = {
+			isa = PBXGroup;
+			children = (
+				1AAE0C931F4682A1003D74CC /* SimpleVR */,
+				1AAE0C921F4682A1003D74CC /* Products */,
+				A2DA1038F3325D7C10505CA2 /* Pods */,
+				E98D2ADFC215D5AE863755E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAE0C921F4682A1003D74CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE0C911F4682A1003D74CC /* SimpleVR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAE0C931F4682A1003D74CC /* SimpleVR */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE0C941F4682A1003D74CC /* AppDelegate.swift */,
+				1AAE0C961F4682A1003D74CC /* VRViewController.swift */,
+				1A3FA92A1F49FB500092ECB1 /* VideoTableViewController.swift */,
+				1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */,
+				1AAE0C9D1F4682A1003D74CC /* LaunchScreen.storyboard */,
+				1AAE0CA01F4682A1003D74CC /* Info.plist */,
+				1AB3254A1F4A0A5100102673 /* SimpleVR-Bridging-Header.h */,
+				1AB325461F4A00EB00102673 /* Videos */,
+			);
+			path = SimpleVR;
+			sourceTree = "<group>";
+		};
+		A2DA1038F3325D7C10505CA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				626399A86BB95C2DA00376B9 /* Pods-SimpleVR.debug.xcconfig */,
+				4B72F1FB3F6AA1321F04D3CF /* Pods-SimpleVR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E98D2ADFC215D5AE863755E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21BE7BDD0B500F3F24BC6DAC /* libPods-SimpleVR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAE0C901F4682A1003D74CC /* SimpleVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAE0CA31F4682A1003D74CC /* Build configuration list for PBXNativeTarget "SimpleVR" */;
+			buildPhases = (
+				F7022BA9392DB7EE885DAA9D /* [CP] Check Pods Manifest.lock */,
+				1AAE0C8D1F4682A1003D74CC /* Sources */,
+				1AAE0C8E1F4682A1003D74CC /* Frameworks */,
+				1AAE0C8F1F4682A1003D74CC /* Resources */,
+				AE2926F9D4FB8BA7BC888994 /* [CP] Embed Pods Frameworks */,
+				0E6125D0EDBDF300DB0916A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleVR;
+			productName = SimpleVR;
+			productReference = 1AAE0C911F4682A1003D74CC /* SimpleVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAE0C891F4682A1003D74CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "James Hughes";
+				TargetAttributes = {
+					1AAE0C901F4682A1003D74CC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 67VJ3BXS9X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1AAE0C8C1F4682A1003D74CC /* Build configuration list for PBXProject "SimpleVR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AAE0C881F4682A1003D74CC;
+			productRefGroup = 1AAE0C921F4682A1003D74CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAE0C901F4682A1003D74CC /* SimpleVR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAE0C8F1F4682A1003D74CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB325471F4A00EB00102673 /* Videos in Resources */,
+				1AAE0C9F1F4682A1003D74CC /* LaunchScreen.storyboard in Resources */,
+				1AAE0C9C1F4682A1003D74CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E6125D0EDBDF300DB0916A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2926F9D4FB8BA7BC888994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7022BA9392DB7EE885DAA9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAE0C8D1F4682A1003D74CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAE0C971F4682A1003D74CC /* VRViewController.swift in Sources */,
+				1A3FA92B1F49FB500092ECB1 /* VideoTableViewController.swift in Sources */,
+				1AAE0C951F4682A1003D74CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AAE0C9D1F4682A1003D74CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAE0C9E1F4682A1003D74CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAE0CA11F4682A1003D74CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleVR/SimpleVR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAE0CA21F4682A1003D74CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleVR/SimpleVR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AAE0CA41F4682A1003D74CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626399A86BB95C2DA00376B9 /* Pods-SimpleVR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VJ3BXS9X;
+				INFOPLIST_FILE = SimpleVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualjames.SimpleVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAE0CA51F4682A1003D74CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B72F1FB3F6AA1321F04D3CF /* Pods-SimpleVR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67VJ3BXS9X;
+				INFOPLIST_FILE = SimpleVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtualjames.SimpleVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAE0C8C1F4682A1003D74CC /* Build configuration list for PBXProject "SimpleVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAE0CA11F4682A1003D74CC /* Debug */,
+				1AAE0CA21F4682A1003D74CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAE0CA31F4682A1003D74CC /* Build configuration list for PBXNativeTarget "SimpleVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAE0CA41F4682A1003D74CC /* Debug */,
+				1AAE0CA51F4682A1003D74CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AAE0C891F4682A1003D74CC /* Project object */;
+}
