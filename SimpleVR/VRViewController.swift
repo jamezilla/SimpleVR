@@ -9,10 +9,8 @@
 import UIKit
 import MobileCoreServices
 
-//class ViewController: UIViewController, GVRVideoViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-class VRViewController: UIViewController, GVRVideoViewDelegate, UINavigationControllerDelegate {
+class VRViewController: UIViewController, GVRVideoViewDelegate {
 
-//    private var isInitialized = false
     private let videoView = GVRVideoView()
     
     var url: URL? {
@@ -25,10 +23,12 @@ class VRViewController: UIViewController, GVRVideoViewDelegate, UINavigationCont
         super.viewDidLoad()
 
         videoView.delegate = self
+        videoView.displayMode = .fullscreenVR
+        videoView.enableCardboardButton = false
         videoView.enableInfoButton = false
         videoView.enableFullscreenButton = false
-        videoView.enableCardboardButton = false
         videoView.enableTouchTracking = true
+        videoView.hidesTransitionView = true
         videoView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(videoView)
         
@@ -40,13 +40,6 @@ class VRViewController: UIViewController, GVRVideoViewDelegate, UINavigationCont
         ])
     }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        videoView.displayMode = .fullscreenVR
-        videoView.hidesTransitionView = true
-    }
-
     private func rewind() {
         self.videoView.seek(to: 0)
         self.videoView.play()
@@ -54,20 +47,8 @@ class VRViewController: UIViewController, GVRVideoViewDelegate, UINavigationCont
    
     // MARK: - GVRVideoViewDelegate
     func widgetViewDidTap(_ widgetView: GVRWidgetView) {
-//        loadVideo()
         rewind()
     }
-    
-//    private func loadVideo() {
-//        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-//            let imagePicker = UIImagePickerController()
-//            imagePicker.delegate = self
-//            imagePicker.sourceType = .photoLibrary
-//            imagePicker.mediaTypes = [kUTTypeMovie as String]
-//            imagePicker.allowsEditing = true
-//            present(imagePicker, animated: true, completion: nil)
-//        }
-//    }
    
     func widgetView(_ widgetView: GVRWidgetView, didLoadContent content: Any) {
         print("Finished loading video")
@@ -84,20 +65,5 @@ class VRViewController: UIViewController, GVRVideoViewDelegate, UINavigationCont
             rewind()
         }
     }
-    
-    // MARK: - UIImagePickerControllerDelegate
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//        defer {
-//            dismiss(animated:true, completion: nil)
-//        }
-//       
-//        guard let url = info[UIImagePickerControllerMediaURL] as? URL else {
-//            print("couln't load url \(String(describing: info[UIImagePickerControllerMediaURL]))")
-//            return
-//        }
-//        
-//        videoView.load(from: url, of: GVRVideoType.mono)
-//    }
-
 }
 
