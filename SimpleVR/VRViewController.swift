@@ -9,27 +9,53 @@
 import UIKit
 import MobileCoreServices
 
-class VRViewController: UIViewController, GVRVideoViewDelegate {
+class VRViewController: UIViewController, GVRRendererViewControllerDelegate {
 
-    private let videoView = GVRVideoView()
+    private let player: AVPlayer
+    private let renderViewController: GVRRendererViewController
+    private let sceneRenderer: GVRSceneRenderer
+    private let videoRenderer: GVRVideoRenderer
     
-    var url: URL? {
-        didSet {
-            videoView.load(from: url, of: GVRVideoType.mono)
-        }
+    private var videoView: GVRRendererView {
+        return self.renderViewController.view as! GVRRendererView
+    }
+    
+    init(url: URL) {
+        player = AVPlayer(url: url)
+        player.actionAtItemEnd = .none
+        
+        videoRenderer = GVRVideoRenderer()
+        videoRenderer.player = player
+        videoRenderer.setSphericalMeshOfRadius(50, latitudes: 12, longitudes: 24, verticalFov: 180, horizontalFov: 360, meshType: .monoscopic)
+
+        sceneRenderer = GVRSceneRenderer()
+        sceneRenderer.renderList.add(videoRenderer)
+
+        renderViewController = GVRRendererViewController(renderer: sceneRenderer)
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        // set up a callback for looping the video
+        let selector = #selector(playerItemDidReachEnd)
+        let name = NSNotification.Name.AVPlayerItemDidPlayToEndTime
+        let object = player.currentItem
+        NotificationCenter.default.addObserver(self, selector: selector, name: name, object: object)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        fatalError()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        videoView.delegate = self
-        videoView.displayMode = .fullscreenVR
-        videoView.enableCardboardButton = false
-        videoView.enableInfoButton = false
-        videoView.enableFullscreenButton = false
-        videoView.enableTouchTracking = true
-        videoView.hidesTransitionView = true
-        videoView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addChildViewController(renderViewController)
+        renderViewController.didMove(toParentViewController: self)
+        
         view.addSubview(videoView)
         
         NSLayoutConstraint.activate([
@@ -40,30 +66,47 @@ class VRViewController: UIViewController, GVRVideoViewDelegate {
         ])
     }
     
-    private func rewind() {
-        self.videoView.seek(to: 0)
-        self.videoView.play()
-    }
-   
-    // MARK: - GVRVideoViewDelegate
-    func widgetViewDidTap(_ widgetView: GVRWidgetView) {
-        rewind()
-    }
-   
-    func widgetView(_ widgetView: GVRWidgetView, didLoadContent content: Any) {
-        print("Finished loading video")
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateVideoPlayback()
     }
     
-    func widgetView(_ widgetView: GVRWidgetView, didFailToLoadContent content: Any, withErrorMessage errorMessage: String) {
-        print("Failed to load video: \(errorMessage)")
-    }
+    // MARK: - AVPlayer
     
-    func videoView(_ videoView: GVRVideoView, didUpdatePosition position: TimeInterval) {
-        // Loop the video when it reaches the end.
-        if position == videoView.duration() {
-            rewind()
+    private dynamic func playerItemDidReachEnd(notification: NSNotification) {
+        guard let player = notification.object as? AVPlayerItem else {
+            return
         }
+        
+        player.seek(to: kCMTimeZero)
+    }
+    
+    // MARK: - GVRRendererViewControllerDelegate
+    
+    func didTapTriggerButton() {
+        updateVideoPlayback()
+    }
+    
+    func shouldHideTransitionView() -> Bool {
+        return true
+    }
+    
+    func renderer(for displayMode: GVRDisplayMode) -> GVRRenderer! {
+        // Hide the reticle in embedded mode.
+        sceneRenderer.hidesReticle = (displayMode == .embedded)
+
+        return sceneRenderer
+    }
+    
+    // MARK: - Actions
+    
+    private func updateVideoPlayback() {
+        guard player.rate == 1.0 else {
+            player.play()
+            return
+        }
+
+        player.pause()
     }
 }
 

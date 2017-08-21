@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		1A3FA92B1F49FB500092ECB1 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FA92A1F49FB500092ECB1 /* VideoTableViewController.swift */; };
 		1AAE0C951F4682A1003D74CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0C941F4682A1003D74CC /* AppDelegate.swift */; };
-		1AAE0C971F4682A1003D74CC /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0C961F4682A1003D74CC /* VRViewController.swift */; };
-		1AAE0C9C1F4682A1003D74CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */; };
 		1AAE0C9F1F4682A1003D74CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0C9D1F4682A1003D74CC /* LaunchScreen.storyboard */; };
 		1AB325471F4A00EB00102673 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 1AB325461F4A00EB00102673 /* Videos */; };
+		1AC550E71F4B639F0004CBD5 /* RendererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC550E61F4B639F0004CBD5 /* RendererViewController.swift */; };
+		1AEC68361F4D2CA900670B0D /* GVRHeadPose.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68221F4D2CA900670B0D /* GVRHeadPose.mm */; };
+		1AEC68371F4D2CA900670B0D /* GVRImageRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68241F4D2CA900670B0D /* GVRImageRenderer.mm */; };
+		1AEC68381F4D2CA900670B0D /* GVRRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68271F4D2CA900670B0D /* GVRRenderer.mm */; };
+		1AEC68391F4D2CA900670B0D /* GVRRendererView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68291F4D2CA900670B0D /* GVRRendererView.mm */; };
+		1AEC683A1F4D2CA900670B0D /* GVRRendererViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC682B1F4D2CA900670B0D /* GVRRendererViewController.m */; };
+		1AEC683B1F4D2CA900670B0D /* GVRReticleRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC682D1F4D2CA900670B0D /* GVRReticleRenderer.mm */; };
+		1AEC683C1F4D2CA900670B0D /* GVRSceneRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC682F1F4D2CA900670B0D /* GVRSceneRenderer.mm */; };
+		1AEC683D1F4D2CA900670B0D /* GVRTextureRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68311F4D2CA900670B0D /* GVRTextureRenderer.mm */; };
+		1AEC683E1F4D2CA900670B0D /* GVRUIViewRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68331F4D2CA900670B0D /* GVRUIViewRenderer.mm */; };
+		1AEC683F1F4D2CA900670B0D /* GVRVideoRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC68351F4D2CA900670B0D /* GVRVideoRenderer.mm */; };
 		930B196C3B3E563AD556F50E /* libPods-SimpleVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE7BDD0B500F3F24BC6DAC /* libPods-SimpleVR.a */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +30,32 @@
 		1AAE0C911F4682A1003D74CC /* SimpleVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAE0C941F4682A1003D74CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AAE0C961F4682A1003D74CC /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
-		1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AAE0C9E1F4682A1003D74CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AAE0CA01F4682A1003D74CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AB325461F4A00EB00102673 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
 		1AB3254A1F4A0A5100102673 /* SimpleVR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleVR-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AC550E61F4B639F0004CBD5 /* RendererViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RendererViewController.swift; sourceTree = "<group>"; };
+		1AEC68211F4D2CA900670B0D /* GVRHeadPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRHeadPose.h; sourceTree = "<group>"; };
+		1AEC68221F4D2CA900670B0D /* GVRHeadPose.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRHeadPose.mm; sourceTree = "<group>"; };
+		1AEC68231F4D2CA900670B0D /* GVRImageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRImageRenderer.h; sourceTree = "<group>"; };
+		1AEC68241F4D2CA900670B0D /* GVRImageRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRImageRenderer.mm; sourceTree = "<group>"; };
+		1AEC68251F4D2CA900670B0D /* GVRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRKit.h; sourceTree = "<group>"; };
+		1AEC68261F4D2CA900670B0D /* GVRRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRRenderer.h; sourceTree = "<group>"; };
+		1AEC68271F4D2CA900670B0D /* GVRRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRRenderer.mm; sourceTree = "<group>"; };
+		1AEC68281F4D2CA900670B0D /* GVRRendererView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRRendererView.h; sourceTree = "<group>"; };
+		1AEC68291F4D2CA900670B0D /* GVRRendererView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRRendererView.mm; sourceTree = "<group>"; };
+		1AEC682A1F4D2CA900670B0D /* GVRRendererViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRRendererViewController.h; sourceTree = "<group>"; };
+		1AEC682B1F4D2CA900670B0D /* GVRRendererViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRRendererViewController.m; sourceTree = "<group>"; };
+		1AEC682C1F4D2CA900670B0D /* GVRReticleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRReticleRenderer.h; sourceTree = "<group>"; };
+		1AEC682D1F4D2CA900670B0D /* GVRReticleRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRReticleRenderer.mm; sourceTree = "<group>"; };
+		1AEC682E1F4D2CA900670B0D /* GVRSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRSceneRenderer.h; sourceTree = "<group>"; };
+		1AEC682F1F4D2CA900670B0D /* GVRSceneRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRSceneRenderer.mm; sourceTree = "<group>"; };
+		1AEC68301F4D2CA900670B0D /* GVRTextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRTextureRenderer.h; sourceTree = "<group>"; };
+		1AEC68311F4D2CA900670B0D /* GVRTextureRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRTextureRenderer.mm; sourceTree = "<group>"; };
+		1AEC68321F4D2CA900670B0D /* GVRUIViewRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRUIViewRenderer.h; sourceTree = "<group>"; };
+		1AEC68331F4D2CA900670B0D /* GVRUIViewRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRUIViewRenderer.mm; sourceTree = "<group>"; };
+		1AEC68341F4D2CA900670B0D /* GVRVideoRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRVideoRenderer.h; sourceTree = "<group>"; };
+		1AEC68351F4D2CA900670B0D /* GVRVideoRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GVRVideoRenderer.mm; sourceTree = "<group>"; };
 		21BE7BDD0B500F3F24BC6DAC /* libPods-SimpleVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B72F1FB3F6AA1321F04D3CF /* Pods-SimpleVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVR.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR.release.xcconfig"; sourceTree = "<group>"; };
 		626399A86BB95C2DA00376B9 /* Pods-SimpleVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleVR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleVR/Pods-SimpleVR.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +76,7 @@
 		1AAE0C881F4682A1003D74CC = {
 			isa = PBXGroup;
 			children = (
+				1AEC68201F4D2CA900670B0D /* GVRKit */,
 				1AAE0C931F4682A1003D74CC /* SimpleVR */,
 				1AAE0C921F4682A1003D74CC /* Products */,
 				A2DA1038F3325D7C10505CA2 /* Pods */,
@@ -65,15 +96,43 @@
 			isa = PBXGroup;
 			children = (
 				1AAE0C941F4682A1003D74CC /* AppDelegate.swift */,
+				1AC550E61F4B639F0004CBD5 /* RendererViewController.swift */,
 				1AAE0C961F4682A1003D74CC /* VRViewController.swift */,
 				1A3FA92A1F49FB500092ECB1 /* VideoTableViewController.swift */,
-				1AAE0C9B1F4682A1003D74CC /* Assets.xcassets */,
 				1AAE0C9D1F4682A1003D74CC /* LaunchScreen.storyboard */,
 				1AAE0CA01F4682A1003D74CC /* Info.plist */,
 				1AB3254A1F4A0A5100102673 /* SimpleVR-Bridging-Header.h */,
 				1AB325461F4A00EB00102673 /* Videos */,
 			);
 			path = SimpleVR;
+			sourceTree = "<group>";
+		};
+		1AEC68201F4D2CA900670B0D /* GVRKit */ = {
+			isa = PBXGroup;
+			children = (
+				1AEC68211F4D2CA900670B0D /* GVRHeadPose.h */,
+				1AEC68221F4D2CA900670B0D /* GVRHeadPose.mm */,
+				1AEC68231F4D2CA900670B0D /* GVRImageRenderer.h */,
+				1AEC68241F4D2CA900670B0D /* GVRImageRenderer.mm */,
+				1AEC68251F4D2CA900670B0D /* GVRKit.h */,
+				1AEC68261F4D2CA900670B0D /* GVRRenderer.h */,
+				1AEC68271F4D2CA900670B0D /* GVRRenderer.mm */,
+				1AEC68281F4D2CA900670B0D /* GVRRendererView.h */,
+				1AEC68291F4D2CA900670B0D /* GVRRendererView.mm */,
+				1AEC682A1F4D2CA900670B0D /* GVRRendererViewController.h */,
+				1AEC682B1F4D2CA900670B0D /* GVRRendererViewController.m */,
+				1AEC682C1F4D2CA900670B0D /* GVRReticleRenderer.h */,
+				1AEC682D1F4D2CA900670B0D /* GVRReticleRenderer.mm */,
+				1AEC682E1F4D2CA900670B0D /* GVRSceneRenderer.h */,
+				1AEC682F1F4D2CA900670B0D /* GVRSceneRenderer.mm */,
+				1AEC68301F4D2CA900670B0D /* GVRTextureRenderer.h */,
+				1AEC68311F4D2CA900670B0D /* GVRTextureRenderer.mm */,
+				1AEC68321F4D2CA900670B0D /* GVRUIViewRenderer.h */,
+				1AEC68331F4D2CA900670B0D /* GVRUIViewRenderer.mm */,
+				1AEC68341F4D2CA900670B0D /* GVRVideoRenderer.h */,
+				1AEC68351F4D2CA900670B0D /* GVRVideoRenderer.mm */,
+			);
+			path = GVRKit;
 			sourceTree = "<group>";
 		};
 		A2DA1038F3325D7C10505CA2 /* Pods */ = {
@@ -158,7 +217,6 @@
 			files = (
 				1AB325471F4A00EB00102673 /* Videos in Resources */,
 				1AAE0C9F1F4682A1003D74CC /* LaunchScreen.storyboard in Resources */,
-				1AAE0C9C1F4682A1003D74CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,9 +275,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAE0C971F4682A1003D74CC /* VRViewController.swift in Sources */,
+				1AEC68371F4D2CA900670B0D /* GVRImageRenderer.mm in Sources */,
+				1AEC68381F4D2CA900670B0D /* GVRRenderer.mm in Sources */,
+				1AC550E71F4B639F0004CBD5 /* RendererViewController.swift in Sources */,
+				1AEC683B1F4D2CA900670B0D /* GVRReticleRenderer.mm in Sources */,
+				1AEC683D1F4D2CA900670B0D /* GVRTextureRenderer.mm in Sources */,
+				1AEC68391F4D2CA900670B0D /* GVRRendererView.mm in Sources */,
+				1AEC683A1F4D2CA900670B0D /* GVRRendererViewController.m in Sources */,
 				1A3FA92B1F49FB500092ECB1 /* VideoTableViewController.swift in Sources */,
+				1AEC683F1F4D2CA900670B0D /* GVRVideoRenderer.mm in Sources */,
+				1AEC68361F4D2CA900670B0D /* GVRHeadPose.mm in Sources */,
 				1AAE0C951F4682A1003D74CC /* AppDelegate.swift in Sources */,
+				1AEC683C1F4D2CA900670B0D /* GVRSceneRenderer.mm in Sources */,
+				1AEC683E1F4D2CA900670B0D /* GVRUIViewRenderer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +411,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 67VJ3BXS9X;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/GVRSDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+				);
 				INFOPLIST_FILE = SimpleVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtualjames.SimpleVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,7 +435,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 67VJ3BXS9X;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/GVRSDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+				);
 				INFOPLIST_FILE = SimpleVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtualjames.SimpleVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";

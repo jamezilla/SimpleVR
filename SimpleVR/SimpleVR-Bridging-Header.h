@@ -9,7 +9,6 @@
 #ifndef SimpleVR_Bridging_Header_h
 #define SimpleVR_Bridging_Header_h
 
-#import "GVRCardboardView.h"
-#import "GVRVideoView.h"
+#import "GVRKit.h"
 
 #endif /* SimpleVR_Bridging_Header_h */

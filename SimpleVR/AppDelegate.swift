@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UINavigationControllerDel
     let urls: [URL] = Bundle.main.urls(forResourcesWithExtension: "mp4", subdirectory: "Videos") ?? []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UIScreen.main.brightness = 1.0
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         
         guard let window = window else {

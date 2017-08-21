@@ -14,9 +14,12 @@ class VideoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = UIColor.black
         
         // push down the table cells so you can easily select them from inside the cardboard viewer
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 500))
+        let height = UIScreen.main.bounds.height - CGFloat(urls.count * 44) - 20
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: height))
         tableView.tableHeaderView = headerView
     }
 
@@ -41,8 +44,8 @@ class VideoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = VRViewController()
-        viewController.url = urls[indexPath.row]
+        let url = urls[indexPath.row]
+        let viewController = RendererViewController(url: url)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 
